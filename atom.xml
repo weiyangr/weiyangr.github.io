@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weiyangr.github.io/"/>
-  <updated>2016-06-22T14:38:57.965Z</updated>
+  <updated>2016-06-23T14:59:40.823Z</updated>
   <id>https://weiyangr.github.io/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的博客</title>
+    <link href="https://weiyangr.github.io/2016/06/23/My%20blog/"/>
+    <id>https://weiyangr.github.io/2016/06/23/My blog/</id>
+    <published>2016-06-23T14:59:40.820Z</published>
+    <updated>2016-06-23T14:59:40.823Z</updated>
+    
+    <content type="html">&lt;p&gt;在网上看教程折腾了一下午终于可以看到雏形了；&lt;/p&gt;
+&lt;p&gt;在这儿谢谢Sean Sun（&lt;a href=&quot;http://pinggod.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pinggod&lt;/a&gt;）提供的模板；谢谢&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在网上看教程折腾了一下午终于可以看到雏形了；&lt;/p&gt;
+&lt;p&gt;在这儿谢谢Sean Sun（&lt;a href=&quot;http://pinggod.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pinggod&lt;/a&gt;）提供的模板；谢谢&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
