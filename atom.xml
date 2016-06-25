@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weiyangr.github.io/"/>
-  <updated>2016-06-23T14:59:40.823Z</updated>
+  <updated>2016-06-25T14:01:53.818Z</updated>
   <id>https://weiyangr.github.io/</id>
   
   <author>
@@ -14,6 +14,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建HEXO过程中常用的插件件</title>
+    <link href="https://weiyangr.github.io/2016/06/25/Hexo%20Plugins/"/>
+    <id>https://weiyangr.github.io/2016/06/25/Hexo Plugins/</id>
+    <published>2016-06-25T13:32:46.595Z</published>
+    <updated>2016-06-25T14:01:53.818Z</updated>
+    
+    <content type="html">&lt;p&gt;##HEXO常用插件(&lt;strong&gt;Hexo Plugins&lt;/strong&gt;)##&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-generator-index --save
+npm install hexo-generator-archive --save
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm install hexo-server --save
+npm install hexo-deployer-git --save
+npm install hexo-deployer-heroku --save
+npm install hexo-deployer-rsync --save
+npm install hexo-deployer-openshift --save
+npm install hexo-renderer-marked@0.2 --save
+npm install hexo-renderer-stylus@0.2 --save
+npm install hexo-generator-feed@1 --save
+npm install hexo-generator-sitemap@1 --save
+npm install hexo-renderer-jade --save
+npm install hexo-browsersync --save
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;##HEXO安装##&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-cli -g
+hexo init blog
+cd blog
+npm install
+hexo server
+本机预览
+hexo generate
+hexo server
+同步数据
+hexo g
+hexo d
+hexo g -d 
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##HEXO常用插件(&lt;strong&gt;Hexo Plugins&lt;/strong&gt;)##&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-generator-index --save
+npm install hexo-generator-archive --s
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>我的博客</title>
