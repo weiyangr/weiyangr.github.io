@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 使用github管理hexo本地文件 · WeiYang</title><meta name="description" content="使用github管理hexo本地文件 - WeiYang"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/weiyangr" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">使用github管理hexo本地文件</h1><div class="post-info">Jun 29, 2016</div><div class="post-content"><p>由于hexo+github搭建博客很依赖hexo本地文件,如果家里和公司的hexo本地文件夹不同那么生成的博客样子就不同,每次deploy的时候就有可能会覆盖.加入公司的_post里面有4篇日志,家里的里面有3篇,那么在家里<code>hexo generate</code>后在<code>hexo deploy</code>就有可能将4篇覆盖成3篇,所以需要公司和家里电脑的hexo本地文件夹同步,我采用github托管.</p>
+<p>1.首先需要安装git,当然既然已经用hexo写blog了那就肯定安装了git,npm,python,nodejs等了.</p>
+<p>2.然后要有github账户,当然和上面一样,既然在github上写blog肯定也已经有了.(废话)</p>
+<p>3.我们新建一个repository,我命名为hexoblog吧.</p>
+<p>4.假设本地hexo文件夹为hexoblog,我们首先需要用git初始化管理这个目录.</p>
+<p><code>git init</code></p>
+<p>这时hexoblog下有个.git隐藏文件夹可以用 ls -al查看出,这是git管理这个文件夹的所有用到的文件.</p>
+<p>5.init后git只不过建立了.git还未对任何文件进行管理,我们需要用</p>
+<p><code>git add .</code></p>
+<p>“.”代表所有文件,我们把hexoblog所有文件加入到git的管理中,这时我们用<code>git status</code>可以看到一大片绿的文件名,表明我们已经添加了这些文件的管理.</p>
+<p>6.我们在运行</p>
+<p><code>git commit -m &quot;first commit&quot;</code>提交这些文件的修改.这时我们本的hexoblog管理就完成了,但是还没有提交的github上.</p>
+<p>7.我们在运行</p>
+<p><code>git remote add origin https://github.com/你的用户名/你的repository名字.git</code><br>指定把本地的文件托管到这个地方.加入我托管的地址是</p>
+<blockquote>
+<p><a href="https://github.com/youthy/hexoblog" target="_blank" rel="external">https://github.com/youthy/hexoblog</a> (就是浏览器上面的地址)</p>
+</blockquote>
+<p>那么我的命令就是</p>
+<p><code>git remote add origin https://github.com/youthy/hexoblog.git</code><br>1.我们这次制定了托管的地址,下面就可以提交了<br><code>git push origin master</code><br>origin就是我们制定的地址,类似于c++中 define定义的名字一样,如果制定的是<code>git remote add another http***.git</code><br>那么就可以用another代替origin. master是分支名字,如果你建立了其他分支可以更换这个名字.<br>这时我们回到github上可以看到提交成功了.</p>
+<p><img src="http://youthy-picture.qiniudn.com/%E9%80%89%E5%8C%BA_004.png" alt=""></p>
+<p>2.之后在家里的电脑上执行<br><code>git clone https://你的托管的地址.git</code><br>就可以将文件复制到本地了</p>
+<p>实际上还有点小问题.<br>我们进入themes文件夹下会看到</p>
+<p><img src="http://youthy-picture.qiniudn.com/%E9%80%89%E5%8C%BA_005.png" alt=""></p>
+<p>主题中有几个没有提交成功.只有landscape提交成功了,对比他们我发现失败的原因是其他的theme本身就有git在负责管理,比如我们在light下执行ls -al 可以看到.git文件夹,但是landscape中没有,这是没有提交成功的原因.</p>
+<p>使用 <code>rm -rf .git</code></p>
+<p>移除了这几个文件夹的git管理文件,然后回到hexoblog下同样移除.git文件.再按上述步骤重新生成提交了一遍就ok了</p>
+<p><img src="http://youthy-picture.qiniudn.com/%E9%80%89%E5%8C%BA_007.png" alt=""></p>
+<p>这下终于可以再公司和家两端同步写blog了.</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/06/25/shanghai-girl/" class="next">下一篇</a></div><div class="copyright"><p>© 2016 <a href="https://weiyangr.github.io">WeiYang</a>, unless otherwise noted.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-75505300-2",'auto');ga('send','pageview');</script></body></html>
