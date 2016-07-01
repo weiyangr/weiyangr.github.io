@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://weiyangr.github.io/"/>
-  <updated>2016-07-01T04:14:13.529Z</updated>
+  <updated>2016-07-01T07:52:37.198Z</updated>
   <id>https://weiyangr.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>贰零一六</title>
+    <link href="https://weiyangr.github.io/2016/07/01/2016/"/>
+    <id>https://weiyangr.github.io/2016/07/01/2016/</id>
+    <published>2016-07-01T07:51:38.704Z</published>
+    <updated>2016-07-01T07:52:37.198Z</updated>
+    
+    <content type="html">&lt;p&gt;今天7月1号！2016年过去一半了！&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://weiyangr.github.io/2016/06/23/My-blog/&quot;&gt;Weiyang&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      2016
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>使用github管理hexo本地文件</title>
